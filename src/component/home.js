@@ -70,28 +70,21 @@ const Home = () => {
     return setData(filtered) 
   };
 
-
-
-
 const isLoading = status === FETCH_STATUS.LOADING;
 const isSuccess = status === FETCH_STATUS.SUCCESS;
 const isError = status === FETCH_STATUS.ERROR;
 const isSearch = doSearch == FETCH_STATUS.SEARCH;
 const lastPostIndex = currentPage * bikesPerPage;
 const firstPostIndex = lastPostIndex - bikesPerPage;
-
 const currentPages = bikesData?.slice(firstPostIndex, lastPostIndex) 
-
-
-
 useEffect(() =>{
   getBikes()
   console.log(data, "data")
   
   console.log(doSearch, "doSearch")
 },[currentPage, pageCount,search,dateStolen,data, doSearch])
-
 if(isLoading) return <Spinner />
+
   return (
     <div>
       <Navbar/>
@@ -112,7 +105,6 @@ if(isLoading) return <Spinner />
        setCurrentPage={setCurrentPage}
        currentPage={currentPage}
        />
-  
     </div>
   )
 }

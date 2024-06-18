@@ -7,12 +7,9 @@ function App() {
     <BrowserRouter>
         <div className='app'>
             <main className='flex' > 
-        
             <div className='w-full'>
             <Routes>
               <Route   path='/' element={<Home/>} /> 
-              
-         
             </Routes>
             </div>
          </main>

@@ -8,7 +8,6 @@ const Error = () => {
       <img src={insightfull} className='w-[13rem]' alt="no image " />
       <p class="mb-4 text-lg font-light text-gray-500 dark:text-gray-400">Sorry something went wrong.</p>
       <h3 class="dark:text-primary-500 text-3xl font-extrabold tracking-tight text-gray-600 lg:text-3xl">An error occurred, please reload and check your internet</h3>
-
     </div>
   </div>
 </section>
